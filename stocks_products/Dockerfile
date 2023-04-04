@@ -1,6 +1,8 @@
 FROM python:3.9
 
-WORKDIR /code
+RUN mkdir /stock_app
+RUN mkdir /stock_app/staticfiles
+WORKDIR /stock_app
 
 COPY . .
 
